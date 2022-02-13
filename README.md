@@ -6,20 +6,42 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
+Open the file in read access mode.
 
-### Step 2: 
+### Step 2:
+Intialize a variable with 0(word).
+
+### Step 3:
+Iterate the content of the file using for loop.
+
+### Step 4:
+Split the contents into each line using .split() function.
+
+### Step 5:
+Iterate the list of lines and increment the value of variable (word) each time.
+
+### Step 6:
+End of the Program. 
  
-### Step 3: 
-
-### Step 4:  
-
-### Step 5: 
-
-### Step 6: 
 
 ## PROGRAM:
+```
+#Program to count the total number of words.
+#Developed by: Paul Andrew D
+#RegisterNumber: 21500230
 
-### OUTPUT:
+with open("EX10.txt","r") as fp:
+    words = 0
+    for data in fp:
+        lines=data.split()
+        for line in lines:
+            words += 1
+    print("Total No.of Words:",words)
+```
+## EX10.txt file:
+![Output](./output1.PNG)
+## OUTPUT:
+![Output](./output2.PNG)
 
 
 
